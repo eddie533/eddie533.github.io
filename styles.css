@@ -1,0 +1,350 @@
+/* Base styles */
+body {
+    font-family: 'Fragment Mono';
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    font-size: 20;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 40px;
+    padding-left: 20px;
+    padding-top: 10px;
+    padding-right: 10px;
+}
+
+.logo h1 a{
+    font-size: 20px;
+    text-decoration: none;
+    color: black;
+}
+
+nav ul li {
+    position: relative;
+    display: inline-block;
+}
+
+nav ul li a {
+    color: black;
+    text-decoration: none;
+    padding: 10px 15px;
+    display: block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    right: 0;
+    background-color: #fff;
+    min-width: 160px;
+    z-index: 1;
+}
+
+.dropdown-content a:hover {
+    background-color: #ddd;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.dropbtn {
+    padding: 10px 15px;
+    border: none;
+    cursor: pointer;
+}
+
+.title {
+    font-size: 44px;
+}
+
+.button-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50px;
+}
+
+.orange-button {
+    background-color: orangered;
+    color: white;
+    border: none;
+    padding: 15px 20px;
+    border-radius: 25px;
+    font-size: 16px;
+    cursor: pointer;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    margin: 0 60px;
+}
+
+.orange-button:hover {
+    background-color: rgb(255, 106, 52);
+}
+
+.white-button {
+    background-color: white;
+    color: orangered;
+    border: none;
+    padding: 15px 20px;
+    border-radius: 25px;
+    font-size: 16px;
+    cursor: pointer;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    margin: 0 60px;
+}
+
+.white-button:hover {
+    background-color: rgb(214, 214, 214);
+}
+
+.centered-div {
+    text-align: center; /* Optional: Center text inside the div */
+    width: 50%;
+    max-width: 700px;
+    margin: 0 auto;
+    padding: 10px;
+}
+
+.centered-div-wide {
+    text-align: center; /* Optional: Center text inside the div */
+    width: 75%;
+    margin: 0 auto;
+    padding-top: 30px;
+}
+
+.image-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(2, auto);
+    gap: 10px;
+    max-width: 700px;
+    justify-content: center;
+    margin: 0 auto;
+}
+
+.image-grid img {
+    width: 100%;
+    height: 100%;
+    background-image: url('image.png');
+    background-size: cover;
+    background-position: center;
+}
+
+.padded {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 20px;
+}
+
+.max-width {
+    max-width: 1200px;
+}
+
+.paragraph {
+    font-size: 16;
+}
+
+.link {
+    color: orangered;
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.link:visited {
+    color: orangered;
+}
+
+.highlight {
+    color: orangered;
+}
+
+.light-grey {
+    color: #e2e2e2;
+}
+
+.big-orange-background {
+    background-color: orangered;
+    color: white;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.big-orange-background-max-width {
+    background-color: orangered;
+    color: white;
+    max-width: 1240px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.left-side {
+    flex: 1;
+    padding: 20px;
+}
+
+.right-side {
+    flex: 1;
+    width: 200px;
+    padding: 20px;
+    text-align: center;
+}
+
+.signup-container {
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 20px;
+    text-align: center;
+}
+
+.signup-form input[type="email"] {
+    width: 200px;
+    height: 30px;
+    padding: 10px;
+    margin-bottom: 15px;
+    font-size: 16px;
+    border: none;
+}
+
+.flex-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 80px;
+}
+
+.flex-container img{
+    max-width: 200px;
+    max-height: 200px;
+    width: auto;
+    height: auto;
+}
+
+.faq-container {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.faq-item {
+    margin-bottom: 5px;
+    border-bottom: 1px solid white;
+    padding-bottom: 10px;
+}
+
+.faq-question {
+    cursor: pointer;
+    font-weight: bold;
+    padding-top: 10px;
+
+}
+
+.faq-answer {
+    display: none;
+    padding-top: 10px;
+    padding-bottom: 5px;
+}
+
+
+.footer {
+    display: flex;
+    align-items: center;
+    justify-content: right;
+    height: 100px;
+    padding-right: 20px;
+}
+
+
+
+
+
+
+
+
+
+
+.menu-heading {
+    width: 40%;
+    min-width: 400px;
+    padding: 20px;
+}
+
+.menu-center-heading {
+
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    max-width: 1200px;
+}
+
+.menu-center {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 15px;
+    max-width: 1200px;
+    margin: 10px;
+}
+
+.grid-item {
+    overflow: hidden;
+    padding: 10px;
+}
+
+.grid-item img {
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: contain;
+    transform: scale(0.8);
+}
+
+.grid-item p {
+    margin: 10px 0 0;
+    font-size: 12px;
+}
+
+.grid-item h2 {
+    margin: 10px 0 0;
+    font-size: 18px;
+}
+
+
+
+
+.image-container {
+    display: flex;
+    justify-content: center;
+    gap: 80px;
+    padding: 20px;
+    max-width: 1200px;
+}
+
+.image-item {
+    text-align: center;
+    width: 40%;
+}
+
+.image-item img {
+    width: 40%;
+    height: auto;
+}
+
+.image-text {
+    margin-bottom: 40px;
+    font-size: 20px;
+}
