@@ -18,7 +18,7 @@ header {
     padding-right: 10px;
 }
 
-.logo h1 a{
+.logo h1 a {
     font-size: 20px;
     text-decoration: none;
     color: black;
@@ -107,7 +107,8 @@ nav ul li a {
 }
 
 .centered-div {
-    text-align: center; /* Optional: Center text inside the div */
+    text-align: center;
+    /* Optional: Center text inside the div */
     width: 50%;
     max-width: 700px;
     margin: 0 auto;
@@ -115,7 +116,8 @@ nav ul li a {
 }
 
 .centered-div-wide {
-    text-align: center; /* Optional: Center text inside the div */
+    text-align: center;
+    /* Optional: Center text inside the div */
     width: 75%;
     margin: 0 auto;
     padding-top: 30px;
@@ -224,7 +226,7 @@ nav ul li a {
     height: 80px;
 }
 
-.flex-container img{
+.flex-container img {
     max-width: 200px;
     max-height: 200px;
     width: auto;
@@ -234,6 +236,7 @@ nav ul li a {
 .faq-container {
     max-width: 600px;
     margin: 0 auto;
+    text-align: left;
 }
 
 .faq-item {
@@ -265,7 +268,41 @@ nav ul li a {
 }
 
 
+@media (max-width: 600px) {
+    .left-side {
+        text-align: center;
+        width: auto;
+        max-width: 700px;
+        margin: 0 auto;
+        padding: 30px;
+        flex: 0;
+    }
 
+    .right-side {
+        text-align: center;
+        width: auto;
+        max-width: 700px;
+        margin: 0 auto;
+        padding: 30px;
+        flex: 0;
+    }
+
+    .big-orange-background {
+        background-color: orangered;
+        color: white;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .big-orange-background-max-width {
+        background-color: orangered;
+        color: white;
+        max-width: 1240px;
+        display: flex;
+        flex-direction: column;
+    }
+}
 
 
 
@@ -322,6 +359,21 @@ nav ul li a {
     margin: 10px 0 0;
     font-size: 18px;
 }
+
+
+@media (max-width: 600px) {
+    .grid-container {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 15px;
+        max-width: 1200px;
+        margin: 10px;
+    }
+
+}
+
+
+
 
 
 
