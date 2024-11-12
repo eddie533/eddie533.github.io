@@ -444,4 +444,9 @@ nav ul li a {
         width: 100%;
     }
 
+    .image-text {
+        margin-bottom: 40px;
+        font-size: 16px;
+    }
+
 }
