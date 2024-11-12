@@ -370,6 +370,12 @@ nav ul li a {
         margin: 10px;
     }
 
+    .menu-heading {
+        width: 40%;
+        min-width: 200px;
+        padding: 20px;
+    }
+
 }
 
 
